@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Ticket Reservation Help/FAQ</title>
+    <style>
+        .Header{
+
+width: 100%;
+height: 200px;
+background-color: #E9F4F9;
+padding: 20px;
+margin: 0;
+display: flex;
+justify-content: space-between; /* Align items to the end */
+align-items: flex-end; /* Align items to the end */
+
+}
+
+.Header img{
+
+height: 150px;
+margin-bottom: 50px; /* Add margin at the bottom */
+margin-top: 10px; /* Add margin on the right */
+}
+
+
+
+.Header ul {
+list-style-type: none;
+width: 100%;
+text-align: center;
+
+}
+
+.Header a {
+text-decoration: none;
+color: black;
+}
+
+.Header li{
+
+display: inline-block; /* Display the list items horizontally */
+padding: 10px 20px;
+border-right: 2px solid black; /* Add a border on the right of each list item */
+}
+
+
+.Header li:last-child {
+border-right: none; /* Remove the border on the last list item */
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+            color: #777;
+        }
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+        .answer {
+            margin-bottom: 20px;
+        }
+        .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0; 
+    border-top: 1px solid #e9e9e9;
+  }
+  .footer-border {
+    border-style: solid;
+
+  }
+
+  .footer-centr {
+    align-content: center;
+
+  }
+  
+  .footer-col {
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .footer-col p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+
+  .footer-col form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+  }
+  
+  .footer-bottom a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+    </style>
+    <div class = "Header">
+
+        <img src = "LOGO.png">
+
+        <ul>
+            <td><li><a href = "homepage.php">Home</a></li></td>
+            <td><li><a href = "packages.php">Bundle Packages</a></li></td>
+            <td><li><a href = "bookingPage.php">Booking</a></li></td>
+            <td><li><a href = "#">Payments</a></li></td>
+            <td><li><a href = "help.html">Help</a></li></td>
+        </ul>
+
+    </div>
+
+    
+</head>
+<body>
+    <h1>Help/FAQ</h1>
+    
+    <h2>General Questions</h2>
+    <div class="question">Q: How do I make a reservation?</div>
+    <div class="answer">
+        <p>To make a reservation, simply visit our website and use the search tool to find flights. Then, follow the prompts to select your flights and complete the booking process.</p>
+    </div>
+    
+    <div class="question">Q: Can I make changes to my reservation?</div>
+    <div class="answer">
+        <p>Yes, you can make changes to your reservation depending on the fare rules of your ticket. Some changes may incur fees, so it's best to check the terms and conditions or contact our customer service for assistance.</p>
+    </div>
+    
+    <h2>Payment Questions</h2>
+    <div class="question">Q: What payment methods do you accept?</div>
+    <div class="answer">
+        <p>We accept major credit cards, debit cards, and various other payment methods depending on your location. You can view the available payment options during the booking process.</p>
+    </div>
+    
+    <div class="question">Q: Is it safe to enter my credit card information on your website?</div>
+    <div class="answer">
+        <p>Yes, we use industry-standard encryption technology to ensure that your credit card information is secure when you make a payment on our website.</p>
+    </div>
+
+    <footer>
+      <div class="footer-container" style="background-color:aliceblue;">
+            <div class="footer-col">
+              <h4>About Us</h4>
+              <a href="aboutUs.html">Who we are</a>
+            </div>
+            <div class="footer-col">
+              <h4>Support</h4>
+              <a href="help.html">FAQ</a>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <a href="#">For general inquiries</a>
+      
+            </div>
+            
+            <div class="footer-col">
+              <h4><a href="feedback.php">Feedback</a></h4>
+              <br>
+              <br>
+              <center>
+                <h4>Subscribe to our newsletter !</h4>
+                
+                  <fieldset align-content:center;>
+                    <form class="footer-col" method="post"></form>
+                  <input type="text" id="name" name="name" placeholder="Your Name">
+                  <br>
+                  
+                  <br>
+                  <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                  <br> <button style="text-align:left;" type="submit">Subscribe</button>
+      
+                
+      
+                </form>
+              </fieldset> 
+                <br>
+              </center>
+            </div>
+      
+            <div class="footer-col">
+              <h4><a href="adminLogin.php">Admin Login</a></h4>
+            </div>
+      
+            <div class="footer-col">
+              <h4><a href="serviceProvider.php">Service Provider Login</a></h4>
+            </div>
+      
+            <div class="footer-col">
+              <h4>Email</h4>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+            <p><a href="privacy policy.html">Privacy Policy</a> <a href="terms2.html">Terms & Conditions</a></p>
+          </div>
+        </footer>
+      
+      </div>
+      </body>
+      </html>
+      
+      
+      

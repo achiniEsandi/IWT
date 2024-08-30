@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thems.css">
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        /* background-image: url('../src/pexels-pixabay-104826.jpg'); */
+        background-color: rgba(208, 246, 245, 0.885);
+        border-image-source: url(border.png);
+        border-image-width: 10px;
+        background-size: 1500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body h1{
+        font-size: 50px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    #main-container{
+        
+        width: 100%;
+
+    }
+    
+    #container-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap:10px;
+        margin-top: -6%;
+    }
+
+    .box{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container-box #left-box{
+        width: 380px; 
+        height: 550px;
+        background-size: cover;
+        border-radius: 10px;
+        
+    }
+    #container-box #left-box img{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    #container-box #right-box{
+         border:none;
+        width: 490px; 
+        height: 550px;
+        color: rgb(0, 0, 0);   
+        background-color: rgba(0, 0, 0, 0.4);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(6px);
+        padding: 20px;
+        text-align: justify;
+        font-weight: 800;
+        border-radius: 10px;
+
+    }
+
+    .container{
+
+display : flex;
+}
+
+
+.Header{
+
+    width: 100%;
+    height: 200px;
+    background-color: #E9F4F9;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Align items to the end */
+    align-items: flex-end; /* Align items to the end */
+
+    }
+
+.Header img{
+
+height: 150px;
+margin-bottom: 50px; /* Add margin at the bottom */
+margin-top: 10px; /* Add margin on the right */
+}
+
+
+
+.Header ul {
+list-style-type: none;
+width: 100%;
+text-align: center;
+
+}
+
+.Header a {
+text-decoration: none;
+color: black;
+}
+
+.Header li{
+
+display: inline-block; /* Display the list items horizontally */
+padding: 10px 20px;
+border-right: 2px solid black; /* Add a border on the right of each list item */
+}
+
+
+.Header li:last-child {
+border-right: none; /* Remove the border on the last list item */
+}
+
+
+    </style>
+
+<link rel="stylesheet" href="footerStyle.css">  
+</head>
+<body>
+    <div>
+            
+    <div class = "Header">
+
+        <img src = "LOGO.png">
+        
+        <ul>
+            <td><li><a href = "homepage.php">Home</a></li></td>
+            <td><li><a href = "packages.php">Bundle Packages</a></li></td>
+            <td><li><a href = "bookingPage.php">Booking</a></li></td>
+            <td><li><a href = "payment-portal.php">Payments</a></li></td>
+            <td><li><a href = "help.html">Help</a></li></td>
+        </ul>
+        
+        </div>
+    <h1>Privacy Policy</h1><br><br><br>
+    <section id="main-container">
+        
+        <div id="container-box">
+            <div id="left-box" class="box">
+                <img src="src/pexels-ahmedmuntasir-912050.jpg">
+            </div>
+            <div id="right-box" class="box">
+                1. What information the airline collects from you when you make a reservation, such as your name, contact information, and payment information..<br><br><br>
+                2. How the airline will use your information, such as to process your reservation, send you confirmation emails, and personalize your travel experience..<br><br><br>
+                3. With whom the airline may share your information, such as government agencies, security screeners, and other airlines involved in your trip.<br><br><br>
+                4. How the airline will protect your information, such as using encryption and secure storage facilities.<br><br><br>
+                5. Your rights with respect to your information, such as the right to access and correct your information.<br><br><br>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container" style="background-color:aliceblue;">
+              <div class="footer-col">
+                <h4>About Us</h4>
+                <a href="aboutUs.html">Who we are</a>
+              </div>
+              <div class="footer-col">
+                <h4>Support</h4>
+                <a href="help.html">FAQ</a>
+              </div>
+              <div class="footer-col">
+                <h4>Contact Us</h4>
+                <a href="#">For general inquiries</a>
+        
+              </div>
+              
+              <div class="footer-col">
+                <h4><a href="feedback.php">Feedback</a></h4>
+                <br>
+                <br>
+                <center>
+                  <h4>Subscribe to our newsletter !</h4>
+                  
+                    <fieldset align-content:center;>
+                      <form class="footer-col" method="post"></form>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <br>
+                    
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                    <br> <button style="text-align:left;" type="submit">Subscribe</button>
+        
+                  
+        
+                  </form>
+                </fieldset> 
+                  <br>
+                </center>
+              </div>
+        
+              <div class="footer-col">
+                <h4><a href="adminLogin.php">Admin Login</a></h4>
+              </div>
+        
+              <div class="footer-col">
+                <h4><a href="serviceProvider.php">Service Provider Login</a></h4>
+              </div>
+        
+              <div class="footer-col">
+                <h4>Email</h4>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Company Name. All rights reserved.</p>
+              <p><a href="privacy policy.html">Privacy Policy</a> <a href="terms2.html">Terms & Conditions</a></p>
+            </div>
+          </footer>
+        
+        </div>
+        </body>
+        </html>
+        
+        
+        

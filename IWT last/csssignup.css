@@ -1,0 +1,53 @@
+
+.form {
+    position: relative; /* Changed to relative positioning */
+    left: 25%; /* Adjusted positioning using percentage */
+}
+
+.hr {
+    display: relative; /* Removed negative positioning and hidden the element */
+}
+
+.p1 {
+    font-size: 200%;
+    position: absolute; /* Changed to relative positioning */
+    top: 13%; /* Adjusted positioning using percentage */
+}
+
+.p2 {
+    font-size: xx-large;
+    position: absolute; /* Changed to relative positioning */
+    top: 41.5%; /* Adjusted positioning using percentage */
+}
+
+.p3 {
+    font-size: xx-large;
+    position: absolute; /* Changed to relative positioning */
+    top: 70%; /* Adjusted positioning using percentage */
+}
+
+ul.menu 
+{
+    float: initial;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(190, 190, 190);
+  }
+
+li.clas
+{
+  float: left;
+  
+}
+
+li a
+{
+    display: block;
+    color: rgb(12, 12, 12);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
